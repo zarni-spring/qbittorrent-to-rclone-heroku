@@ -1,3 +1,7 @@
-deploy:
-  compose:
-    - Dockerfile
+build:
+  context: .
+  dockerfile: Dockerfile
+  target: prod
+  args:
+    - ENV1=prod
+    - ENV2=$VALUE
