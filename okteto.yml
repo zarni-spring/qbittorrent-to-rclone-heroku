@@ -1,7 +1,4 @@
-build:
-  api:
-    context: api
-  frontend:
-    context: frontend
-    dockerfile: Dockerfile
-    target: dev
+deploy:
+  compose:
+    - docker-compose.yml
+    - docker-compose.dev.yml
