@@ -3,3 +3,5 @@ build:
      image: okteto.dev/qbtbot:latest
      context: .
      dockerfile: Dockerfile
+  deploy:
+    app.json
