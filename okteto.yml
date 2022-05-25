@@ -1,4 +1,7 @@
+build:
+  qbtbot:
+     image: okteto.dev/qbtbot:latest
+     context: .
+     dockerfile: Dockerfile
 deploy:
-  compose:
-    - docker-compose.yml
-    - docker-compose.dev.yml
+  - kubectl apply -f k8s
