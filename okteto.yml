@@ -2,3 +2,5 @@ build:
   qbtbot:
      image: okteto.dev/qbtbot:latest
      dockerfile: Dockerfile
+  deploy:
+    - app.json
