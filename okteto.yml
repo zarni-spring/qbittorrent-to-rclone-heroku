@@ -1,6 +1,6 @@
 build:
   context: .
-  dockerfile: Dockerfile
+  dockerfile: docker_compose.yml
   target: prod
   args:
     - ENV1=prod
