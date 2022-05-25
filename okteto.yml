@@ -4,4 +4,4 @@ build:
      context: .
      dockerfile: Dockerfile
   deploy:
-    app.json
+    - kubectl apply app.json
