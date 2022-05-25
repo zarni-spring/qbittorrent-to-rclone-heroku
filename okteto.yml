@@ -1,6 +1,7 @@
 build:
-  qbtbot:
-     image: okteto.dev/qbtbot:latest
-     dockerfile: Dockerfile
-  deploy:
-    - app.json
+  api:
+    context: api
+  frontend:
+    context: frontend
+    dockerfile: Dockerfile
+    target: dev
