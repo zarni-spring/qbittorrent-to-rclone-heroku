@@ -1,7 +1,4 @@
 build:
   qbtbot:
      image: okteto.dev/qbtbot:latest
-     context: .
      dockerfile: Dockerfile
-  deploy:
-    - kubectl apply app.json
