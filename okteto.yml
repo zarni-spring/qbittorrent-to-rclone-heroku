@@ -3,5 +3,3 @@ build:
      image: okteto.dev/qbtbot:latest
      context: .
      dockerfile: Dockerfile
-deploy:
-  - kubectl apply -f k8s
